@@ -76,3 +76,25 @@ function handleWindowResize()
     document.body.style.backgroundColor = "tomato";
     console.log("window resizing")
 }
+
+window.addEventListener("copy", handleWindowCopy);
+
+function handleWindowCopy()
+{
+    alert("copier!");
+}
+
+window.addEventListener("offline", handleWindowOffline);
+
+function handleWindowOffline()
+{
+    alert("no wifi");
+}
+
+window.addEventListener("online", handleWindowOnline);
+
+function handleWindowOnline()
+{
+    alert("online");
+}
+
